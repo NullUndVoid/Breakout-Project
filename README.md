@@ -10,10 +10,10 @@ O projeto segue a arquitetura MVVM, onde source files com o nome Screen são res
 com.example.game
 .
 .....models
-..............Highscore
+	......Highscore
 	
 .....repo
-..............HighscoreRepo
+	......HighscoreRepo
 .
 .
 ....Ball
