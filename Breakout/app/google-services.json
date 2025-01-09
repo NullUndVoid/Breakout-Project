@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "132920652432",
+    "project_id": "breakout-f9867",
+    "storage_bucket": "breakout-f9867.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132920652432:android:0f8d2cd8cbef0b4e749e15",
+        "android_client_info": {
+          "package_name": "com.example.game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8CTvKt5daOrfLk2a4fUJasfWKHvWTzyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
