@@ -1,7 +1,7 @@
-#Breakout - An Android Project
+# Breakout - An Android Project
 Created by: Ricardo Lopes
 
-###Estrutura do projecto
+### Estrutura do projecto
 O projeto segue a arquitetura MVVM, onde source files com o nome Screen são responsáveis pelo UI, View são responsáveis pela lógica do UI. Além disto estão presente também class files com nomes únicos tais como "Ball", "Brick", "Paddle", "Star"; estes são objetos usados para o desenvolvimento do jogo. Têm-se o model Highscore que serve para representar os dados de Highscore da base de dados e finalmente o HighscoreRepo que contém as funções responsáveis por obter a Highscore da base de dados e atualizar a mesma.
 
 ..............................................
@@ -101,14 +101,14 @@ override fun onCreate(savedInstanceState: Bundle?) {
 }
 ```
 
-###Lista de funcionalidade da aplicação
+### Lista de funcionalidade da aplicação
 Esta aplicação apresenta as seguintes funcionalidades:
 
  - Autenticação por email.
  - Alojamento da Highscore do utilizador numa base de dados remota.
  - Um jogo estilo Breakout infinito que só termina quando o utilizador deixa a bola cair para além da "paddle".
 
-###Desenhos, esquemas e protótipos da aplicação
+### Desenhos, esquemas e protótipos da aplicação
 Este projeto não fez uso de desenhos nem esquemas, sendo apenas usado a conversão de um projeto anterior feito em Python para Kotlin. O resto da aplicação foi elaborada a partir de exemplos feitos em aula para adicionar as funcionalidades pretendidas.
 
 ```Python
@@ -282,7 +282,7 @@ def main():
 ```
 
 
-###Modelo de dados
+### Modelo de dados
 Para este projeto, não foi necessário o uso de modelos de dados complexos, sendo apenas utilizado o modelo Highscore para receber os dados necessarios:
 
 ```kotlin
@@ -296,11 +296,11 @@ class Highscore (
 }
 ```
 
-###Implementação do projecto
+### Implementação do projecto
 O projeto foi implementado seguindo a arquitetura MVVM e de acordo com os conteúdos lecionados nas aulas. Para tal fez-se uso da documentação Android e dos exercícios de aula: https://github.com/lgleto/EDJD2425
 
 
-###Tecnologias usadas
+### Tecnologias usadas
 As tecnologias utilizadas para este projeto foram:
 
  - Firebase, para autenticação.
@@ -308,8 +308,8 @@ As tecnologias utilizadas para este projeto foram:
  - Jetpack Compose, para a criação do UI
  - Android Canvas, utilizado para desenhar manualmente os elementos do jogo no ecra e posiciona-los de forma livre.
 
-###Dificuldades
+### Dificuldades
 Na elaboração deste projeto ouve uma falha no planeamento, o qual levou a uma entrega tardia. De futuro é necessário alocar mais tempo para a elaboração de um projeto desta scope.
 
-###Conclusões
+### Conclusões
 Este projeto serviu como base para aperfeiçoar e por em prática os conhecimentos obtidos durante as aulas.
