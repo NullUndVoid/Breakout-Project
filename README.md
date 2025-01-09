@@ -1,36 +1,38 @@
 # Breakout - An Android Project
 Created by: Ricardo Lopes
 
+
+
 ## Estrutura do projecto
 O projeto segue a arquitetura MVVM, onde source files com o nome Screen são responsáveis pelo UI, View são responsáveis pela lógica do UI. Além disto estão presente também class files com nomes únicos tais como "Ball", "Brick", "Paddle", "Star"; estes são objetos usados para o desenvolvimento do jogo. Têm-se o model Highscore que serve para representar os dados de Highscore da base de dados e finalmente o HighscoreRepo que contém as funções responsáveis por obter a Highscore da base de dados e atualizar a mesma.
 
 ```
-	com.example.game
-	.
-	.....models
-			......Highscore
+com.example.game
+.
+.....models
+	......Highscore
 	
-	.....repo
-			......HighscoreRepo
-	.
-	.
-	....Ball
-	....Brick
-	....Paddle
-	....Star
-	.
-	.
-	....GameHome
-	....GameOverScreen
-	....GameScreen
-	....HighscoreScreen
-	....LoginScreen
-	.
-	.
-	....GameView
-	....LoginView
-	....HighscoreView
-	....MainActivity
+.....repo
+	......HighscoreRepo
+.
+.
+....Ball
+....Brick
+....Paddle
+....Star
+.
+.
+....GameHome
+....GameOverScreen
+....GameScreen
+....HighscoreScreen
+....LoginScreen
+.
+.
+....GameView
+....LoginView
+....HighscoreView
+....MainActivity
 	
 ```
 
