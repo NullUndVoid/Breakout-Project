@@ -12,6 +12,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.SurfaceHolder
 import android.view.SurfaceView
+import com.example.game.repo.HighscoreRepo
 
 class GameView : SurfaceView, Runnable {
 
@@ -108,6 +109,7 @@ class GameView : SurfaceView, Runnable {
 
         val handler = Handler(Looper.getMainLooper())
         handler.post{
+            HighscoreRepo.updateHighscore(score)
             onGameOverHolder()
         }
 

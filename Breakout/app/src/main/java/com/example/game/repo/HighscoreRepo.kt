@@ -30,7 +30,6 @@ object HighscoreRepo {
                         finalHighscore = highscore.toObject(Highscore::class.java)
                     }
 
-                    break
                 }
 
                 onResult(finalHighscore)
@@ -45,7 +44,39 @@ object HighscoreRepo {
             }
     }
 
-    fun updateHighscore(){
+    fun updateHighscore(score: Int = 0){
+        val currentUser = auth.currentUser
+        val userId = currentUser?.uid
+        var finalHighscore = Highscore()
+        var finalHighscoreId = ""
+
+        db.collection("highscores")
+            .whereEqualTo("userId", userId)
+            .get()
+
+            .addOnSuccessListener { highscores ->
+                Log.d("wtf", "aight")
+                for (highscore in highscores) {
+                    Log.d("TAG", "${highscore.id} => ${highscore.data}")
+
+                    val currentHighscore = highscore.toObject(Highscore::class.java)
+                    if((currentHighscore.score ?: 0) > (finalHighscore.score ?: 0)){
+                        finalHighscore = highscore.toObject(Highscore::class.java)
+                        finalHighscoreId = highscore.id
+                    }
+
+                }
+
+                if(score > (finalHighscore.score ?: 0)){
+                    db.collection("highscores")
+                        .document(finalHighscoreId)
+                        .update("score", score)
+                }
+            }
+
+            .addOnFailureListener { exception ->
+                Log.w("TAG", "Error getting documents: ", exception)
+            }
 
     }
 
