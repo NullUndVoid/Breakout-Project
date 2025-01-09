@@ -312,5 +312,5 @@ As tecnologias utilizadas para este projeto foram:
 ## Dificuldades
 Na elaboração deste projeto ouve uma falha no planeamento, o qual levou a uma entrega tardia. De futuro é necessário alocar mais tempo para a elaboração de um projeto desta scope.
 
-### Conclusões
+## Conclusões
 Este projeto serviu como base para aperfeiçoar e por em prática os conhecimentos obtidos durante as aulas.
